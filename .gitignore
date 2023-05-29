@@ -5,6 +5,6 @@
 .vscode
 
 # Go
-/hello-world
-/hello-world.exe
+/example1
+/example1.exe
 /dist
