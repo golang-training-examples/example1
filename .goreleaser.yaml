@@ -29,6 +29,10 @@ archives:
       - goos: windows
         format: zip
 
+release:
+  extra_files:
+    - glob: ./dist/example1_windows_amd64_v1/example1.exe
+
 checksum:
   name_template: "{{ .ProjectName }}_checksums.txt"
   algorithm: sha256
