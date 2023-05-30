@@ -12,6 +12,7 @@ var Cmd = &cobra.Command{
 	Use:     "version",
 	Short:   "Print the version number of example1",
 	Aliases: []string{"v"},
+	Args:    cobra.NoArgs,
 	Run: func(c *cobra.Command, args []string) {
 		fmt.Println(version.Version)
 	},
