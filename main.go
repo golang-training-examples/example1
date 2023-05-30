@@ -12,8 +12,16 @@ For more information, see:
 
 package main
 
-import "github.com/golang-training-examples/example1/cmd"
+import (
+	"github.com/golang-training-examples/example1/cmd"
+	"github.com/spf13/viper"
+)
 
 func main() {
+	viper.AddConfigPath(".")
+	viper.SetConfigName("config")
+	viper.SetConfigType("yaml")
+	viper.SetEnvPrefix("EXAMPLE")
+	viper.ReadInConfig()
 	cmd.Execute()
 }
