@@ -1,9 +1,8 @@
 package root
 
 import (
-	"fmt"
-
 	"github.com/golang-training-examples/example1/cmd/root"
+	"github.com/golang-training-examples/example1/pkg/hello"
 	"github.com/spf13/cobra"
 )
 
@@ -14,7 +13,7 @@ var Cmd = &cobra.Command{
 	Short: "Say hello",
 	Args:  cobra.NoArgs,
 	Run: func(c *cobra.Command, args []string) {
-		fmt.Printf("Hello %s!\n", FlagName)
+		hello.PrintSayHello(FlagName)
 	},
 }
 
