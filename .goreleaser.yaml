@@ -20,7 +20,7 @@ builds:
       - -X github.com/golang-training-examples/example1/version.Version=v{{.Version}}
 
 snapshot:
-  name_template: "{{ incminor .Version }}-dev"
+  name_template: "{{ incminor .Version }}-dev-{{.ShortCommit}}-{{.Timestamp}}"
 
 archives:
   - format: tar.gz
