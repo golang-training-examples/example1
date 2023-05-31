@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	_ "github.com/golang-training-examples/example1/cmd/gorm"
 	_ "github.com/golang-training-examples/example1/cmd/hello"
 	_ "github.com/golang-training-examples/example1/cmd/random_pet_name"
 	"github.com/golang-training-examples/example1/cmd/root"
